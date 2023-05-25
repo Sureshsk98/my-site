@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(10, 68, 70);
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    background-color: rgb(132, 196, 132);
+    padding: 10px;
+    /* height: 30px; */
+}
+.container a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.container a:hover{
+    color: aliceblue;
+}
+.container a img{
+   font-size: 30px;
+}
+@media(min-width:600px){
+.head{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+.head ul{
+    list-style: none;
+}
+.head ul li{
+    display: inline;
+    font-size: 20px;
+    padding: 5px;
+}
+.bar{
+    display: none;
+}
+}
+@media(max-width:600px){
+
+    .head{
+        font-size: 20px;
+    }
+    .head ul{
+        list-style: none;
+        padding: 0;
+        margin-left: 10px;
+    }
+    .head ul li{
+        padding-top: 10px ;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+    .bar{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        border: none;
+        background: none;
+        border: 1px solid white;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .bar span{
+        display: block;
+        width:20px;
+        border-top: 1px solid white;
+
+    }
+    .bar span:not(:last-child){
+        margin-bottom: 5px;
+    }
+    .hide{
+        display: none;
+    }
+
+}
+marquee{
+    font-size: medium;
+}
